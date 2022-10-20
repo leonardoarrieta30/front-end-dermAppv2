@@ -1,7 +1,5 @@
-
-
 .hero .background-image {
-  position: absolute; /*posicion fija*/
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -11,7 +9,7 @@
   z-index: -1;
 }
 
-.hero .background-image:after { /**/
+.hero .background-image:after {
   content: '';
   position: absolute;
   top: 0;
@@ -33,24 +31,22 @@
 
 }
 
-.hero .frase{
+.hero .phrase{
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 50%;
   text-align: center;
 
-  /*font: normal 28px 'Open Sans', sans-serif;*/
-  /*padding: 125px 100px;*/
   margin: 200px 80px;
 }
-.frase button{
+.phrase button{
   margin-top: 10px;
   font-size: large;
   background-color: #B49587;
 }
 
-.frase{
+.phrase{
   color: white;
 }
 

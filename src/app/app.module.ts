@@ -9,6 +9,9 @@ import { ViewComponent } from './public/pages/view/view.component';
 import { WhoStartComponent } from './public/pages/who-start/who-start.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
+import { ViewDermatologistComponent } from './overview/pages/dermatologist/view-dermatologist/view-dermatologist.component';
+import { NavbarDermatologistComponent } from './overview/pages/dermatologist/navbar-dermatologist/navbar-dermatologist.component';
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -16,14 +19,17 @@ import {MatButtonModule} from '@angular/material/button';
     HomeComponent,
     NavbarComponent,
     ViewComponent,
-    WhoStartComponent
+    WhoStartComponent,
+    ViewDermatologistComponent,
+    NavbarDermatologistComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
