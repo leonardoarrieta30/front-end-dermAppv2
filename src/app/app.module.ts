@@ -25,6 +25,7 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
 import { InfoPatientSpecificComponent } from './overview/pages/dermatologist/info-patient-specific/info-patient-specific.component';
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatCardModule} from "@angular/material/card";
+import { ChatDermatologistComponent } from './overview/pages/dermatologist/chat-dermatologist/chat-dermatologist.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import {MatCardModule} from "@angular/material/card";
     ListPatientsComponent,
     EditProfileDermatologistComponent,
     InfoPatientSpecificComponent,
+    ChatDermatologistComponent,
 
   ],
   imports: [
