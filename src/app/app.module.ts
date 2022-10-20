@@ -22,6 +22,9 @@ import {MatPaginatorModule} from "@angular/material/paginator";
 import {ReactiveFormsModule} from "@angular/forms";
 import { EditProfileDermatologistComponent } from './profiles/dermatologist/edit-profile-dermatologist/edit-profile-dermatologist.component';
 import {MatCheckboxModule} from "@angular/material/checkbox";
+import { InfoPatientSpecificComponent } from './overview/pages/dermatologist/info-patient-specific/info-patient-specific.component';
+import {MatGridListModule} from "@angular/material/grid-list";
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -35,6 +38,7 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
     ProfileDermatologistComponent,
     ListPatientsComponent,
     EditProfileDermatologistComponent,
+    InfoPatientSpecificComponent,
 
   ],
   imports: [
@@ -50,7 +54,9 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
     MatTableModule,
     MatPaginatorModule,
     ReactiveFormsModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatGridListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
