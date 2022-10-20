@@ -1,8 +1,8 @@
 import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
 import * as _ from 'lodash';
-import {PatientsService} from "../../../services/patients.service";
+import {PatientsService} from "../../overview/services/patients.service";
 import {MatTableDataSource} from "@angular/material/table";
-import {Patient} from "../../../model/patient";
+import {Patient} from "../../overview/model/patient";
 import {MatSort} from "@angular/material/sort";
 import {FormBuilder, FormGroup, NgForm, Validators} from "@angular/forms";
 import {MatPaginator} from "@angular/material/paginator";
