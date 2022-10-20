@@ -12,6 +12,13 @@ import {MatButtonModule} from '@angular/material/button';
 import { ViewDermatologistComponent } from './overview/pages/dermatologist/view-dermatologist/view-dermatologist.component';
 import { NavbarDermatologistComponent } from './overview/pages/dermatologist/navbar-dermatologist/navbar-dermatologist.component';
 import {MatIconModule} from "@angular/material/icon";
+import { ProfileDermatologistComponent } from './profiles/dermatologist/profile-dermatologist/profile-dermatologist.component';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
+import { ListPatientsComponent } from './overview/pages/dermatologist/list-patients/list-patients.component';
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
+import {MatTableModule} from "@angular/material/table";
+import {MatPaginatorModule} from "@angular/material/paginator";
 
 @NgModule({
   declarations: [
@@ -21,7 +28,10 @@ import {MatIconModule} from "@angular/material/icon";
     ViewComponent,
     WhoStartComponent,
     ViewDermatologistComponent,
-    NavbarDermatologistComponent
+    NavbarDermatologistComponent,
+    ProfileDermatologistComponent,
+    ListPatientsComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -29,7 +39,12 @@ import {MatIconModule} from "@angular/material/icon";
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatProgressSpinnerModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
