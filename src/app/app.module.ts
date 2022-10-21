@@ -38,6 +38,7 @@ import { RegisterFormComponent } from './public/security/register-form/register-
 import { TypeOfUserComponent } from './public/security/type-of-user/type-of-user.component';
 import {MatSelectModule} from "@angular/material/select";
 import { MyDoctorPatientComponent } from './overview/pages/patient/my-doctor-patient/my-doctor-patient.component';
+import { RemindersPatientComponent } from './overview/pages/patient/reminders-patient/reminders-patient.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +65,7 @@ import { MyDoctorPatientComponent } from './overview/pages/patient/my-doctor-pat
     RegisterFormComponent,
     TypeOfUserComponent,
     MyDoctorPatientComponent,
+    RemindersPatientComponent,
 
   ],
   imports: [
