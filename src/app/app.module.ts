@@ -36,6 +36,7 @@ import { LoginFormPatientComponent } from './public/security/login-form-patient/
 import { LoginFormComponent } from './public/security/login-form/login-form.component';
 import { RegisterFormComponent } from './public/security/register-form/register-form.component';
 import { TypeOfUserComponent } from './public/security/type-of-user/type-of-user.component';
+import {MatSelectModule} from "@angular/material/select";
 
 @NgModule({
   declarations: [
@@ -78,7 +79,8 @@ import { TypeOfUserComponent } from './public/security/type-of-user/type-of-user
     ReactiveFormsModule,
     MatCheckboxModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
