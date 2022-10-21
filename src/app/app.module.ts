@@ -39,6 +39,7 @@ import { TypeOfUserComponent } from './public/security/type-of-user/type-of-user
 import {MatSelectModule} from "@angular/material/select";
 import { MyDoctorPatientComponent } from './overview/pages/patient/my-doctor-patient/my-doctor-patient.component';
 import { RemindersPatientComponent } from './overview/pages/patient/reminders-patient/reminders-patient.component';
+import { AboutComponent } from './public/pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import { RemindersPatientComponent } from './overview/pages/patient/reminders-pa
     TypeOfUserComponent,
     MyDoctorPatientComponent,
     RemindersPatientComponent,
+    AboutComponent,
 
   ],
   imports: [
