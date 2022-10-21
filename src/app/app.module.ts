@@ -30,6 +30,7 @@ import {AnalyticsDermatologistComponent} from "./overview/pages/dermatologist/an
 import { ProfilePatientComponent } from './profiles/patient/profile-patient/profile-patient.component';
 import { ViewPatientComponent } from './overview/pages/patient/view-patient/view-patient.component';
 import { NavbarPatientComponent } from './overview/pages/patient/navbar-patient/navbar-patient.component';
+import { EditProfilePatientComponent } from './profiles/patient/edit-profile-patient/edit-profile-patient.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { NavbarPatientComponent } from './overview/pages/patient/navbar-patient/
     ProfilePatientComponent,
     ViewPatientComponent,
     NavbarPatientComponent,
+    EditProfilePatientComponent,
 
   ],
   imports: [
