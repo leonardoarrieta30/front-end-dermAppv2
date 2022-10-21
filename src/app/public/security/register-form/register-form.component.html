@@ -10,13 +10,13 @@
       <label >Filename : {{dataimage1}}</label>
       <mat-card-actions>
         <input  mat-button (change)="capture_file($event)" type="file">
-        <button mat-button (click)="Uploadfile()" > Subir Archivo</button>
+        <button mat-button (click)="Uploadfile()">Upload file</button>
       </mat-card-actions>
     </mat-card>
   </form>
 
   <div class="content2" >
-    <h1> Rellene sus datos: </h1>
+    <h1> Complete your data: </h1>
     <mat-form-field appearance="fill">
       <mat-label>Name</mat-label>
       <input matInput  type="text" placeholder="Name">
@@ -24,7 +24,7 @@
     <mat-form-field appearance="fill">
       <mat-label>Speciality</mat-label>
       <mat-select >
-        <mat-option  speciality="dermatology"  >Dermatology</mat-option>
+        <mat-option  speciality="dermatology">Dermatology</mat-option>
         <mat-option speciality="patient"> Patient</mat-option>
       </mat-select>
     </mat-form-field>

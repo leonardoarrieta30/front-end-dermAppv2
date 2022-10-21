@@ -48,6 +48,7 @@ import { MessagesPatientComponent } from './overview/pages/patient/messages-pati
 import { HomePatientComponent } from './overview/pages/patient/home-patient/home-patient.component';
 import { ScheduleDermatologistComponent } from './overview/pages/dermatologist/schedule-dermatologist/schedule-dermatologist.component';
 import {MatListModule} from "@angular/material/list";
+import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -81,6 +82,7 @@ import {MatListModule} from "@angular/material/list";
     MessagesPatientComponent,
     HomePatientComponent,
     ScheduleDermatologistComponent,
+    PageNotFoundComponent,
 
 
   ],

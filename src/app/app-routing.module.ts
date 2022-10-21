@@ -36,6 +36,7 @@ import {InfoPatientSpecificComponent} from "./history/info-patient-specific/info
 import {
   ScheduleDermatologistComponent
 } from "./overview/pages/dermatologist/schedule-dermatologist/schedule-dermatologist.component";
+import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-found.component";
 
 const routes: Routes = [
   { path: '', component: ViewComponent, children:[
@@ -55,11 +56,11 @@ const routes: Routes = [
       { path: 'messages-patient', component:MessagesPatientComponent},
       { path: 'reminders-patient', component: RemindersPatientComponent },
       { path: 'profile-patient', component: ProfilePatientComponent },
-      {path:'edit-profile-patient',component:EditProfilePatientComponent},
+      {path:'edit-profile-patient',component:EditProfilePatientComponent}
     ]},
 
   { path: 'character', component:TypeOfUserComponent},
- // { path: 'dermatologist', component:ScheduleDoctorComponent},
+  { path: 'dermatologist', component:ScheduleDermatologistComponent},
   {path:'',component:ViewDermatologistComponent,children:[
       // {path:'',component:ScheduleDoctorComponent},
       {path:'chats',component:ChatDermatologistComponent},
@@ -69,8 +70,8 @@ const routes: Routes = [
       {path:'profile',component:ProfileDermatologistComponent},
       {path:'edit-profile',component:EditProfileDermatologistComponent},
       {path: 'infoPatientSpecific', component:InfoPatientSpecificComponent}
-    ]}
-
+    ]},
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
