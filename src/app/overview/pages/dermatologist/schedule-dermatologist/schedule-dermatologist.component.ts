@@ -11,8 +11,15 @@ export class ScheduleDermatologistComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  get selected(): Date | null {
+    return this._selected;
+  }
 
-  selected!: Date | null;
+  set selected(value: Date | null) {
+    this._selected = value;
+  }
+  // @ts-ignore
+  private _selected: Date | null;
 
   horarios=[
     {
@@ -56,5 +63,4 @@ export class ScheduleDermatologistComponent implements OnInit {
       'patient':'patient 10'
     }
   ]
-
 }

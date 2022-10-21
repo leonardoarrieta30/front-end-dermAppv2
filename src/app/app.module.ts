@@ -53,6 +53,8 @@ import {ProfilesImgService} from "./overview/services/profiles-img.service";
 import {HttpClientModule} from "@angular/common/http";
 import {MatExpansionModule} from "@angular/material/expansion";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatNativeDateModule, MatOptionModule} from "@angular/material/core";
 
 
 @NgModule({
@@ -111,8 +113,9 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
     ReactiveFormsModule,
     MatExpansionModule,
     MatSnackBarModule,
-
-
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatOptionModule
   ],
   providers: [PatientsService, DermatologistsService,ProfilesImgService],
   bootstrap: [AppComponent]
