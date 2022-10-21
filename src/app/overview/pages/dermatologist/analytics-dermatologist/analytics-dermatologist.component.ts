@@ -13,3 +13,6 @@ export class AnalyticsDermatologistComponent implements OnInit {
   }
 
 }
+
+export class AnanalyticsDermatologistComponent {
+}

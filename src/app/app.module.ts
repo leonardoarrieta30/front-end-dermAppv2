@@ -40,6 +40,8 @@ import {MatSelectModule} from "@angular/material/select";
 import { MyDoctorPatientComponent } from './overview/pages/patient/my-doctor-patient/my-doctor-patient.component';
 import { RemindersPatientComponent } from './overview/pages/patient/reminders-patient/reminders-patient.component';
 import { AboutComponent } from './public/pages/about/about.component';
+import {PatientsService} from "./overview/services/patients.service";
+import {DermatologistsService} from "./overview/services/dermatologists.service";
 
 @NgModule({
   declarations: [
@@ -88,7 +90,7 @@ import { AboutComponent } from './public/pages/about/about.component';
     MatCardModule,
     MatSelectModule
   ],
-  providers: [],
+  providers: [PatientsService, DermatologistsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
