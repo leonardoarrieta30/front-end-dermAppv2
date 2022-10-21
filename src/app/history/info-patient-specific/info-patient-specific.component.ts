@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Patient} from "../../model/patient";
-import {PatientsService} from "../../services/patients.service";
+import {Patient} from "../../overview/model/patient";
+import {PatientsService} from "../../overview/services/patients.service";
 
 @Component({
   selector: 'app-info-patient-specific',

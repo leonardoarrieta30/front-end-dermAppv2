@@ -15,18 +15,20 @@ import {MatIconModule} from "@angular/material/icon";
 import { ProfileDermatologistComponent } from './profiles/dermatologist/profile-dermatologist/profile-dermatologist.component';
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
-import { ListPatientsComponent } from './overview/history/list-patients/list-patients.component';
+import { ListPatientsComponent } from './history/list-patients/list-patients.component';
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import {MatTableModule} from "@angular/material/table";
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {ReactiveFormsModule} from "@angular/forms";
 import { EditProfileDermatologistComponent } from './profiles/dermatologist/edit-profile-dermatologist/edit-profile-dermatologist.component';
 import {MatCheckboxModule} from "@angular/material/checkbox";
-import { InfoPatientSpecificComponent } from './overview/history/info-patient-specific/info-patient-specific.component';
+import { InfoPatientSpecificComponent } from './history/info-patient-specific/info-patient-specific.component';
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatCardModule} from "@angular/material/card";
 import { ChatDermatologistComponent } from './overview/pages/dermatologist/chat-dermatologist/chat-dermatologist.component';
 import {AnalyticsDermatologistComponent} from "./overview/pages/dermatologist/analytics-dermatologist/analytics-dermatologist.component";
+import { EditProfilePatientComponent } from './profiles/patient/edit-profile-patient/edit-profile-patient.component';
+import { ProfilePatientComponent } from './profiles/patient/profile-patient/profile-patient.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import {AnalyticsDermatologistComponent} from "./overview/pages/dermatologist/an
     InfoPatientSpecificComponent,
     ChatDermatologistComponent,
     AnalyticsDermatologistComponent,
+    EditProfilePatientComponent,
+    ProfilePatientComponent,
 
   ],
   imports: [
