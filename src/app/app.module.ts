@@ -42,6 +42,8 @@ import { RemindersPatientComponent } from './overview/pages/patient/reminders-pa
 import { AboutComponent } from './public/pages/about/about.component';
 import {PatientsService} from "./overview/services/patients.service";
 import {DermatologistsService} from "./overview/services/dermatologists.service";
+import {MatDialogModule} from "@angular/material/dialog";
+
 
 @NgModule({
   declarations: [
@@ -71,6 +73,7 @@ import {DermatologistsService} from "./overview/services/dermatologists.service"
     RemindersPatientComponent,
     AboutComponent,
 
+
   ],
   imports: [
     BrowserModule,
@@ -88,7 +91,9 @@ import {DermatologistsService} from "./overview/services/dermatologists.service"
     MatCheckboxModule,
     MatGridListModule,
     MatCardModule,
-    MatSelectModule
+    MatSelectModule,
+    MatDialogModule,
+
   ],
   providers: [PatientsService, DermatologistsService],
   bootstrap: [AppComponent]
