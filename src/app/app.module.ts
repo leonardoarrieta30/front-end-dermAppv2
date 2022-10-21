@@ -43,6 +43,11 @@ import { AboutComponent } from './public/pages/about/about.component';
 import {PatientsService} from "./overview/services/patients.service";
 import {DermatologistsService} from "./overview/services/dermatologists.service";
 import {MatDialogModule} from "@angular/material/dialog";
+import { MyFilesPatientComponent } from './overview/pages/patient/my-files-patient/my-files-patient.component';
+import { MessagesPatientComponent } from './overview/pages/patient/messages-patient/messages-patient.component';
+import { HomePatientComponent } from './overview/pages/patient/home-patient/home-patient.component';
+import { ScheduleDermatologistComponent } from './overview/pages/dermatologist/schedule-dermatologist/schedule-dermatologist.component';
+import {MatListModule} from "@angular/material/list";
 
 
 @NgModule({
@@ -72,6 +77,10 @@ import {MatDialogModule} from "@angular/material/dialog";
     MyDoctorPatientComponent,
     RemindersPatientComponent,
     AboutComponent,
+    MyFilesPatientComponent,
+    MessagesPatientComponent,
+    HomePatientComponent,
+    ScheduleDermatologistComponent,
 
 
   ],
@@ -93,6 +102,7 @@ import {MatDialogModule} from "@angular/material/dialog";
     MatCardModule,
     MatSelectModule,
     MatDialogModule,
+    MatListModule,
 
   ],
   providers: [PatientsService, DermatologistsService],
