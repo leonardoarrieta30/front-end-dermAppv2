@@ -27,8 +27,9 @@ import {MatGridListModule} from "@angular/material/grid-list";
 import {MatCardModule} from "@angular/material/card";
 import { ChatDermatologistComponent } from './overview/pages/dermatologist/chat-dermatologist/chat-dermatologist.component';
 import {AnalyticsDermatologistComponent} from "./overview/pages/dermatologist/analytics-dermatologist/analytics-dermatologist.component";
-import { EditProfilePatientComponent } from './profiles/patient/edit-profile-patient/edit-profile-patient.component';
 import { ProfilePatientComponent } from './profiles/patient/profile-patient/profile-patient.component';
+import { ViewPatientComponent } from './overview/pages/patient/view-patient/view-patient.component';
+import { NavbarPatientComponent } from './overview/pages/patient/navbar-patient/navbar-patient.component';
 
 @NgModule({
   declarations: [
@@ -45,8 +46,9 @@ import { ProfilePatientComponent } from './profiles/patient/profile-patient/prof
     InfoPatientSpecificComponent,
     ChatDermatologistComponent,
     AnalyticsDermatologistComponent,
-    EditProfilePatientComponent,
     ProfilePatientComponent,
+    ViewPatientComponent,
+    NavbarPatientComponent,
 
   ],
   imports: [
