@@ -31,6 +31,11 @@ import { ProfilePatientComponent } from './profiles/patient/profile-patient/prof
 import { ViewPatientComponent } from './overview/pages/patient/view-patient/view-patient.component';
 import { NavbarPatientComponent } from './overview/pages/patient/navbar-patient/navbar-patient.component';
 import { EditProfilePatientComponent } from './profiles/patient/edit-profile-patient/edit-profile-patient.component';
+import { LoginFormDermatologistComponent } from './public/security/login-form-dermatologist/login-form-dermatologist.component';
+import { LoginFormPatientComponent } from './public/security/login-form-patient/login-form-patient.component';
+import { LoginFormComponent } from './public/security/login-form/login-form.component';
+import { RegisterFormComponent } from './public/security/register-form/register-form.component';
+import { TypeOfUserComponent } from './public/security/type-of-user/type-of-user.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +56,11 @@ import { EditProfilePatientComponent } from './profiles/patient/edit-profile-pat
     ViewPatientComponent,
     NavbarPatientComponent,
     EditProfilePatientComponent,
+    LoginFormDermatologistComponent,
+    LoginFormPatientComponent,
+    LoginFormComponent,
+    RegisterFormComponent,
+    TypeOfUserComponent,
 
   ],
   imports: [
