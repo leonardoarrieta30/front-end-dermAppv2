@@ -39,10 +39,11 @@ import {
 import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-found.component";
 
 const routes: Routes = [
+  { path: 'sign-in', component: RegisterFormComponent},
   { path: '', component: ViewComponent, children:[
       { path: '', component: HomeComponent },
       { path: 'about', component: AboutComponent },
-      { path: 'sign-in', component: RegisterFormComponent },
+      { path: 'sign-in', component: RegisterFormComponent},
       { path: 'login', component:LoginFormComponent},
       { path: 'home', component: HomeComponent },
       { path: 'login-dermatologist', component: LoginFormDermatologistComponent },

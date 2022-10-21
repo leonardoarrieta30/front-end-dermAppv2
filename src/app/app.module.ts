@@ -49,6 +49,10 @@ import { HomePatientComponent } from './overview/pages/patient/home-patient/home
 import { ScheduleDermatologistComponent } from './overview/pages/dermatologist/schedule-dermatologist/schedule-dermatologist.component';
 import {MatListModule} from "@angular/material/list";
 import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
+import {ProfilesImgService} from "./overview/services/profiles-img.service";
+import {HttpClientModule} from "@angular/common/http";
+import {MatExpansionModule} from "@angular/material/expansion";
+import {MatSnackBarModule} from "@angular/material/snack-bar";
 
 
 @NgModule({
@@ -83,8 +87,6 @@ import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-fo
     HomePatientComponent,
     ScheduleDermatologistComponent,
     PageNotFoundComponent,
-
-
   ],
   imports: [
     BrowserModule,
@@ -105,9 +107,14 @@ import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-fo
     MatSelectModule,
     MatDialogModule,
     MatListModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    MatExpansionModule,
+    MatSnackBarModule,
+
 
   ],
-  providers: [PatientsService, DermatologistsService],
+  providers: [PatientsService, DermatologistsService,ProfilesImgService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
