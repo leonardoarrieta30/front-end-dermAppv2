@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import {ViewComponent} from "./public/pages/view/view.component";
 import {HomeComponent} from "./public/pages/home/home.component";
 import {AboutComponent} from "./public/pages/about/about.component";
-import {RegisterFormComponent} from "./public/security/register-form/register-form.component";
 import {LoginFormComponent} from "./public/security/login-form/login-form.component";
 import {LoginFormDermatologistComponent} from "./public/security/login-form-dermatologist/login-form-dermatologist.component";
 import {LoginFormPatientComponent} from "./public/security/login-form-patient/login-form-patient.component";
@@ -37,13 +36,17 @@ import {
   ScheduleDermatologistComponent
 } from "./overview/pages/dermatologist/schedule-dermatologist/schedule-dermatologist.component";
 import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-found.component";
+import {
+  RegisterDermatologistComponent
+} from "./public/security/register-dermatologist/register-dermatologist.component";
+import {RegisterPatientComponent} from "./public/security/register-patient/register-patient.component";
 
 const routes: Routes = [
-  { path: 'sign-in', component: RegisterFormComponent},
   { path: '', component: ViewComponent, children:[
       { path: '', component: HomeComponent },
       { path: 'about', component: AboutComponent },
-      { path: 'sign-in', component: RegisterFormComponent},
+      { path: 'sign-in-dermatologist', component: RegisterDermatologistComponent},
+      { path: 'sign-in-patient', component: RegisterPatientComponent},
       { path: 'login', component:LoginFormComponent},
       { path: 'home', component: HomeComponent },
       { path: 'login-dermatologist', component: LoginFormDermatologistComponent },
@@ -70,7 +73,7 @@ const routes: Routes = [
       {path:'patients',component:ListPatientsComponent},
       {path:'profile',component:ProfileDermatologistComponent},
       {path:'edit-profile',component:EditProfileDermatologistComponent},
-      {path: 'infoPatientSpecific', component:InfoPatientSpecificComponent}
+      {path: 'infoPatientSpecific/:id', component:InfoPatientSpecificComponent}
     ]},
   { path: '**', component: PageNotFoundComponent }
 ];
