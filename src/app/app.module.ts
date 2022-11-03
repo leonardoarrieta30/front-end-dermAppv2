@@ -19,7 +19,7 @@ import { ListPatientsComponent } from './history/list-patients/list-patients.com
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import {MatTableModule} from "@angular/material/table";
 import {MatPaginatorModule} from "@angular/material/paginator";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { EditProfileDermatologistComponent } from './profiles/dermatologist/edit-profile-dermatologist/edit-profile-dermatologist.component';
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import { InfoPatientSpecificComponent } from './history/info-patient-specific/info-patient-specific.component';
@@ -55,6 +55,7 @@ import {MatExpansionModule} from "@angular/material/expansion";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatNativeDateModule, MatOptionModule} from "@angular/material/core";
+import { RegisterDermatologistComponent } from './public/security/register-dermatologist/register-dermatologist.component';
 
 
 @NgModule({
@@ -89,34 +90,36 @@ import {MatNativeDateModule, MatOptionModule} from "@angular/material/core";
     HomePatientComponent,
     ScheduleDermatologistComponent,
     PageNotFoundComponent,
+    RegisterDermatologistComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatIconModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatProgressSpinnerModule,
-    MatTableModule,
-    MatPaginatorModule,
-    ReactiveFormsModule,
-    MatCheckboxModule,
-    MatGridListModule,
-    MatCardModule,
-    MatSelectModule,
-    MatDialogModule,
-    MatListModule,
-    HttpClientModule,
-    ReactiveFormsModule,
-    MatExpansionModule,
-    MatSnackBarModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatOptionModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatIconModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatProgressSpinnerModule,
+        MatTableModule,
+        MatPaginatorModule,
+        ReactiveFormsModule,
+        MatCheckboxModule,
+        MatGridListModule,
+        MatCardModule,
+        MatSelectModule,
+        MatDialogModule,
+        MatListModule,
+        HttpClientModule,
+        ReactiveFormsModule,
+        MatExpansionModule,
+        MatSnackBarModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        MatOptionModule,
+        FormsModule
+    ],
   providers: [PatientsService, DermatologistsService,ProfilesImgService],
   bootstrap: [AppComponent]
 })

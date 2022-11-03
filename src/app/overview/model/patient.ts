@@ -1,12 +1,11 @@
 export interface Patient {
   id:number;
   name:string;
+  lastName:string;
   age:number;
   address:string;
-  gender:string;
-  residence:string;
-  status:string;
-  diagnostic:string;
-  treatment:string;
+  email:string;
+  password:string;
+  dermatologistId: number,
   urlImage:string;
 }
