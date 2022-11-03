@@ -4,14 +4,14 @@
 
   </mat-grid-tile>
   <mat-grid-tile>
-    <div class="login-form">
+    <form class="login-form" #formTemplate='ngForm'>
       <h1>LOG IN</h1>
 
       <div class="login-form1">
         <p>
           <mat-form-field appearance="outline">
             <mat-label>Email</mat-label>
-            <input matInput placeholder="Email">
+            <input matInput name="email" placeholder="Email" [(ngModel)]="dataPatient!.email" required>
           </mat-form-field>
         </p>
       </div>
@@ -20,15 +20,15 @@
         <p>
           <mat-form-field appearance="outline">
             <mat-label>Password</mat-label>
-            <input matInput placeholder="Password">
+            <input matInput name="password" placeholder="Password" [(ngModel)]="dataPatient!.password" required>
           </mat-form-field>
         </p>
       </div>
       <div class="buttons">
-        <button mat-button [routerLink]="'/home-patient'" mat-flat-button color="primary">LOG IN</button>
-        <button mat-button [routerLink]="'/sign-in'" mat-raised-button color="primary">Register</button>
+        <button mat-button (click)="Login(formTemplate)"  mat-flat-button color="primary">LOG IN</button>
+        <button mat-button [routerLink]="'/sign-in-patient'" mat-raised-button color="primary">Register</button>
       </div>
-    </div>
+    </form>
   </mat-grid-tile>
 
 </mat-grid-list>
