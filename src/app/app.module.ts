@@ -56,6 +56,7 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatNativeDateModule, MatOptionModule} from "@angular/material/core";
 import { RegisterDermatologistComponent } from './public/security/register-dermatologist/register-dermatologist.component';
+import { RegisterPatientComponent } from './public/security/register-patient/register-patient.component';
 
 
 @NgModule({
@@ -91,6 +92,7 @@ import { RegisterDermatologistComponent } from './public/security/register-derma
     ScheduleDermatologistComponent,
     PageNotFoundComponent,
     RegisterDermatologistComponent,
+    RegisterPatientComponent,
   ],
     imports: [
         BrowserModule,
