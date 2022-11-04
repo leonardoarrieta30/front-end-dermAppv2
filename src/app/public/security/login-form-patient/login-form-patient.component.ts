@@ -32,7 +32,7 @@ export class LoginFormPatientComponent implements OnInit {
       this.patientService.getPatients().subscribe((data)=>{
         data.map((e)=>{
           if(e.email === this.dataPatient?.email && e.password === this.dataPatient?.password){
-            this.router.navigate(['home-patient']).then();
+            this.router.navigate(['files-patient']).then();
             localStorage.setItem("patient", JSON.stringify(e));
           }
         })

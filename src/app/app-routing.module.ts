@@ -54,7 +54,6 @@ const routes: Routes = [
     ]},
 
   { path: '', component: ViewPatientComponent, children:[
-      { path: 'home-patient', component: HomePatientComponent },
       { path: 'files-patient', component: MyFilesPatientComponent },
       { path: 'myDoctor-patient', component: MyDoctorPatientComponent },
       { path: 'messages-patient', component:MessagesPatientComponent},
