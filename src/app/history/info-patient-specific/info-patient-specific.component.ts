@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {Patient} from "../../diagnosticIllness/model/patient";
 import {PatientsService} from "../../diagnosticIllness/services/patients.service";
+import {ActivatedRoute} from "@angular/router";
+import {UserService} from "../../diagnosticIllness/services/user.service";
+import {toInteger} from "lodash";
 
 @Component({
   selector: 'app-info-patient-specific',
@@ -9,8 +12,8 @@ import {PatientsService} from "../../diagnosticIllness/services/patients.service
 })
 export class InfoPatientSpecificComponent implements OnInit {
   patientData: Patient;
-  constructor(private patientsService: PatientsService) { this.patientData = {} as Patient; }
-  a:any=[]
+  constructor(private route: ActivatedRoute,private patientService: UserService) { this.patientData = {} as Patient; }
+  patient:any = {}
   ngOnInit(): void {
   }
   tiles: any[] = [
@@ -20,12 +23,10 @@ export class InfoPatientSpecificComponent implements OnInit {
     {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
   ];
 
-  showInfoPatient(id:number){
-    console.log(id);
-    this.patientsService.getById(id).subscribe((response:any)=> {
-      this.a.data=response;
-      // this.router.navigate(['/infoPatientSpecific'],this.a)
+  showInfoPatient(){
+    console.log(this.route.snapshot.paramMap.get('id'));
+    this.patientService.getPatientById(toInteger(this.route.snapshot.paramMap.get('id'))).subscribe((response:any)=> {
+      this.patient = response;
     })
-    console.log(this.a);
   }
 }
