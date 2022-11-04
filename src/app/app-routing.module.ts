@@ -40,11 +40,13 @@ import {
   RegisterDermatologistComponent
 } from "./public/security/register-dermatologist/register-dermatologist.component";
 import {RegisterPatientComponent} from "./public/security/register-patient/register-patient.component";
+import {RegisterFormComponent} from "./public/security/register-form/register-form.component";
 
 const routes: Routes = [
   { path: '', component: ViewComponent, children:[
       { path: '', component: HomeComponent },
       { path: 'about', component: AboutComponent },
+      { path: 'sign-in', component:RegisterFormComponent},
       { path: 'sign-in-dermatologist', component: RegisterDermatologistComponent},
       { path: 'sign-in-patient', component: RegisterPatientComponent},
       { path: 'login', component:LoginFormComponent},

@@ -5,29 +5,29 @@
       "lastName": "Rivera",
       "age": 50,
       "address": "Santa anita",
-      "email": "jas@gmail.com",
+      "email": "leonardo@gmail.com",
       "password": "12345",
       "dermatologistId": 2,
       "urlImage": "https://st.depositphotos.com/2069323/2156/i/600/depositphotos_21568765-stock-photo-casual-businessman-pointing.jpg",
       "id": 8
     },
     {
-      "name": "Diego",
-      "lastName": "jas",
+      "name": "Romina",
+      "lastName": "Taboada",
       "age": 18,
-      "address": "lima",
+      "address": "Lima",
       "email": "limas@gmail.com",
       "password": "12345",
       "dermatologistId": 1,
-      "urlImage": "https://www.caritas.org.mx/wp-content/uploads/2019/02/cualidades-persona-humanitaria.jpg",
+      "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-IFVAnDFmPDjhijJijwlt_XvLuLh3FJV-Ug&usqp=CAU",
       "id": 11
     },
     {
-      "name": "Leonardo jose",
-      "lastName": "De la Flor",
+      "name": "Jose",
+      "lastName": "Torres",
       "age": "19",
-      "address": "19",
-      "email": "leonardo@gmail.com",
+      "address": "Unknown",
+      "email": "torres@gmail.com",
       "password": "12345",
       "dermatologistId": 2,
       "urlImage": "https://img.freepik.com/foto-gratis/guapo-exitoso-hombre-negocios-sonriente_176420-19024.jpg?w=2000",
@@ -54,12 +54,23 @@
       "dermatologistId": 0,
       "urlImage": "https://img2.freepng.es/20181130/huu/kisspng-computer-icons-scalable-vector-graphics-user-profi-personal-svg-png-icon-free-download-217545-on-5c01bfc8dca423.4162202015436185049038.jpg",
       "id": 15
+    },
+    {
+      "name": "Diego",
+      "lastName": "Armas",
+      "age": "22",
+      "address": "calle 1",
+      "email": "diego@gmail.com",
+      "password": "alonso123",
+      "dermatologistId": 0,
+      "urlImage": "https://img2.freepng.es/20181130/huu/kisspng-computer-icons-scalable-vector-graphics-user-profi-personal-svg-png-icon-free-download-217545-on-5c01bfc8dca423.4162202015436185049038.jpg",
+      "id": 16
     }
   ],
   "dermatologists": [
     {
       "name": "Diego",
-      "lastName": "Porta",
+      "lastName": "Dextre",
       "age": 18,
       "address": "Huancayo",
       "email": "17.dotero.17@gmail.com",
@@ -78,7 +89,7 @@
       "urlImage": "https://st.depositphotos.com/2069323/2156/i/600/depositphotos_21568765-stock-photo-casual-businessman-pointing.jpg"
     },
     {
-      "name": "Diego",
+      "name": "Carlos",
       "lastName": "KAK",
       "age": "19",
       "address": "Aglo",
@@ -98,8 +109,8 @@
       "id": 4
     },
     {
-      "name": "Diego",
-      "lastName": "Porta",
+      "name": "Andy",
+      "lastName": "Ramirez",
       "age": 18,
       "address": "Huancayo",
       "email": "17.dotero.17@gmail.com",
