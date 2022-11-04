@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Patient} from "../../../overview/model/patient";
+import {Patient} from "../../../diagnosticIllness/model/patient";
 
 @Component({
   selector: 'app-profile-patient',

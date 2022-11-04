@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import {MatTableDataSource} from "@angular/material/table";
-import {FilesUsers} from "../../../overview/model/files-users";
+import {FilesUsers} from "../../../diagnosticIllness/model/files-users";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
 import {DomSanitizer} from "@angular/platform-browser";
-import {ProfilesImgService} from "../../../overview/services/profiles-img.service";
-import {UserService} from "../../../overview/services/user.service";
+import {ProfilesImgService} from "../../../diagnosticIllness/services/profiles-img.service";
+import {UserService} from "../../../diagnosticIllness/services/user.service";
 
 @Component({
   selector: 'app-register-dermatologist',

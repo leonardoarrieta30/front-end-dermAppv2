@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {MatTableDataSource} from "@angular/material/table";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {FilesUsers} from "../../../overview/model/files-users";
+import {FilesUsers} from "../../../diagnosticIllness/model/files-users";
 import {DomSanitizer} from "@angular/platform-browser";
-import {ProfilesImgService} from "../../../overview/services/profiles-img.service";
+import {ProfilesImgService} from "../../../diagnosticIllness/services/profiles-img.service";
 
 @Component({
   selector: 'app-register-form',
