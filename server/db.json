@@ -32,6 +32,28 @@
       "dermatologistId": 2,
       "urlImage": "https://img.freepik.com/foto-gratis/guapo-exitoso-hombre-negocios-sonriente_176420-19024.jpg?w=2000",
       "id": 13
+    },
+    {
+      "name": "Diego",
+      "lastName": "Armas",
+      "age": "20",
+      "address": "calle 1",
+      "email": "u202017237@upc.edu.pe",
+      "password": "12345",
+      "dermatologistId": 2,
+      "urlImage": "https://img2.freepng.es/20181130/huu/kisspng-computer-icons-scalable-vector-graphics-user-profi-personal-svg-png-icon-free-download-217545-on-5c01bfc8dca423.4162202015436185049038.jpg",
+      "id": 14
+    },
+    {
+      "name": "Ana Romina",
+      "lastName": "Tang",
+      "age": "22",
+      "address": "calle 2",
+      "email": "valetodo@gmail.com",
+      "password": "123456",
+      "dermatologistId": 0,
+      "urlImage": "https://img2.freepng.es/20181130/huu/kisspng-computer-icons-scalable-vector-graphics-user-profi-personal-svg-png-icon-free-download-217545-on-5c01bfc8dca423.4162202015436185049038.jpg",
+      "id": 15
     }
   ],
   "dermatologists": [

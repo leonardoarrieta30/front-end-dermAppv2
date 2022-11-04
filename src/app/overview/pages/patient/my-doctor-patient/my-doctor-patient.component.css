@@ -50,3 +50,22 @@
   text-align: center;
   padding: 20px 0;
 }
+.content-doctors{
+  width: 150px;
+  display:block;
+  margin:auto;
+}
+button{
+  width: 150px;
+  height: 35px;
+  background-color: #C6BAA3;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin: 15px auto;
+  transition: 0.5s;
+}
+button:hover{
+  background-color: #B49587;
+}
