@@ -67,7 +67,6 @@ const routes: Routes = [
   {path:'',component:ViewDermatologistComponent,children:[
       // {path:'',component:ScheduleDoctorComponent},
       {path:'chats',component:ChatDermatologistComponent},
-      {path:'analytics',component:AnalyticsDermatologistComponent},
       {path:'calendar',component:ScheduleDermatologistComponent},
       {path:'patients',component:ListPatientsComponent},
       {path:'profile',component:ProfileDermatologistComponent},
