@@ -1,34 +1,17 @@
 <section>
   <div class="name-btnEditP">
-    <h1>Mauricio Rios, MD</h1>
+    <h1>{{this.patient?.name}} {{this.patient?.lastName}}</h1>
     <button mat-raised-button routerLink="/edit-profile-patient">Edit Profile</button>
   </div>
   <div class="profile">
     <div class="profile-section1">
-
-      <img src="assets/Person.jpg"  alt="User profile photo" width="350px" />
-      <br>
-      <div class="matIcon">
-        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="star"></mat-icon>
-        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="star"></mat-icon>
-        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="star"></mat-icon>
-        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="star"></mat-icon>
-        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="star_half"></mat-icon>
-      </div>
-
+      <img src="{{this.patient?.urlImage}}"  alt="User profile photo" width="400px" />
     </div>
-
     <div class="profile-section2">
-      <mat-form-field class="example-full-width" appearance="fill">
-        <mat-label>Enter your name, Please</mat-label>
-        <input matInput placeholder="Ex. Pizza">
-      </mat-form-field>
-      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="youtube"></mat-icon>
-      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="facebook"></mat-icon>
-      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="Linkedin"></mat-icon>
-
+      <h2>Age: {{this.patient?.age}}</h2>
+      <h2>Address: {{this.patient?.address}}</h2>
+      <h2>Email: {{this.patient?.email}}</h2>
     </div>
-
   </div>
 
 </section>
