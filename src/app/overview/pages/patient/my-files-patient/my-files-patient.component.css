@@ -1,0 +1,11 @@
+.example-card{
+  text-align: center;
+}
+.profile{
+  text-align: center;
+}
+.mat-card-image{
+  width: 30%;
+  display:block;
+  margin:auto;
+}

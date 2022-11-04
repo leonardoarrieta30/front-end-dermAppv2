@@ -1,1 +1,13 @@
-<p>my-files-patient works!</p>
+<form class="content1">
+  <mat-card class="example-card">
+    <mat-card-header class="profile">
+      <mat-card-title>Profile</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image width="50px"  [src]="preview" alt="">
+    <label >Filename : {{dataimage1}}</label>
+    <mat-card-actions>
+      <input  mat-button (change)="capture_file($event)" type="file">
+      <button mat-button (click)="Uploadfile()">Upload file</button>
+    </mat-card-actions>
+  </mat-card>
+</form>
